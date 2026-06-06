@@ -1,0 +1,6 @@
+{
+  "name": "遠距醫療與健康管理 2026 期末成果網站",
+  "description": "長榮大學醫務管理學系 2026 年期末成果網站：從健康台灣、智慧長照與遠距醫療發展，到陽光遠距醫療系統實作上線。本網站是陳妤妮同學在張祐倉老師指導下的期末專題總成果整合平台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
