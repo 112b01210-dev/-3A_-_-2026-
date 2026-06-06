@@ -100,7 +100,7 @@ export default function App() {
   const handleTabChange = (tab: "dashboard" | "theory" | "sandbox" | "slides" | "testing") => {
     setActiveTab(tab);
     setTimeout(() => {
-      const el = document.getElementById("tab-navigator");
+      const el = document.getElementById("tab-content-start");
       if (el) {
         const offset = 56; // High precision offset matching Navbar height (pt-14 is 56px)
         const bodyRect = document.body.getBoundingClientRect().top;
@@ -127,6 +127,9 @@ export default function App() {
       <main className="relative pt-14">
         {/* 2. Hero Header Banner Showcase */}
         <HeroSection />
+
+        {/* Anchor for scrolling */}
+        <div id="tab-content-start" />
 
         {/* Interactive Multi-page Tab Navigator Bar */}
         <div id="tab-navigator" className="sticky top-14 z-30 bg-white border-y border-[#E2E8F0] shadow-2xs py-3.5">

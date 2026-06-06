@@ -1,5 +1,5 @@
 import { TESTING_DATA } from "../types";
-import { CheckCircle2, Video, HelpCircle, Image as ImageIcon } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 export function TestingSection() {
   return (
@@ -59,55 +59,6 @@ export function TestingSection() {
                 ))}
               </tbody>
             </table>
-          </div>
-        </div>
-
-        {/* UAT Screenshots/Videos Placeholder Area */}
-        <div className="p-6 bg-[#FAF7F0] rounded-2xl border border-[#E2E8F0]">
-          <h3 className="font-bold text-sm text-[#1F2937] border-b border-gray-200/60 pb-3 mb-6 flex items-center gap-2">
-            <ImageIcon className="text-[#0E7490]" size={18} />
-            同學線上模擬測試截圖與錄影預留區
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Spot 1: Screenshot Placeholders */}
-            <div className="bg-white p-5 rounded-2xl border border-neutral-200 flex flex-col justify-between h-48 hover:shadow-md transition-shadow">
-              <div className="space-y-1">
-                <span className="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">圖片與截圖區</span>
-                <h4 className="font-bold text-sm text-[#1F2937] mt-2">同窗現場錄影與流程截圖</h4>
-                <p className="text-xs text-[#64748B] leading-relaxed">
-                  本區塊專門為您保留，可點擊原始碼在 `TestingSection.tsx` 中置入實際跟同學的視訊考核合照、或者是系統上各端更新的名冊截圖。
-                </p>
-              </div>
-
-              {/* Decorative dotted mockup box */}
-              <div className="h-16 border border-dashed border-neutral-300 rounded-lg bg-gray-50 flex items-center justify-center text-xs text-neutral-400 gap-1 select-none">
-                <ImageIcon size={14} />
-                <span>[請在此處插入同學測試之畫面截圖]</span>
-              </div>
-            </div>
-
-            {/* Spot 2: Link to Recording */}
-            <div className="bg-white p-5 rounded-2xl border border-neutral-200 flex flex-col justify-between h-48 hover:shadow-md transition-shadow">
-              <div className="space-y-1">
-                <span className="text-[10px] font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded">影音串聯與演示</span>
-                <h4 className="font-bold text-sm text-[#1F2937] mt-2">測試影片錄製或會議連結</h4>
-                <p className="text-xs text-[#64748B] leading-relaxed">
-                  本區塊用以關聯您在課堂上面對面測試時的語音、或者是 NotebookLM 形成的互動播報錄音庫。
-                </p>
-              </div>
-
-              {/* Action */}
-              <a
-                href="https://www.youtube.com/watch?v=HyU1t5ZaEkc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="py-2.5 px-4 rounded-xl bg-red-50 hover:bg-red-100 border border-red-200 text-red-700 font-bold text-xs text-center flex items-center justify-center gap-1.5 transition-colors"
-              >
-                <Video size={14} />
-                點擊前往 YouTube 查看系統演示錄影
-              </a>
-            </div>
           </div>
         </div>
       </div>

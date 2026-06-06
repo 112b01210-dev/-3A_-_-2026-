@@ -112,18 +112,15 @@ export function PartBSection() {
 
               <div className="w-full md:w-auto shrink-0 flex flex-col items-stretch gap-2">
                 <a
-                  href="#"
-                  className="px-4 py-2.5 rounded-lg text-center font-semibold text-xs bg-[#FAF7F0] text-[#14B8A6] border border-teal-200 hover:bg-teal-50 shadow-sm transition-colors"
-                  onClick={(e) => {
-                    if (e.currentTarget.getAttribute("href") === "#") {
-                      alert("學生提示：PDF簡報連結目前為預留站位，您可以在原始碼中隨時替換為您在 Google Drive/網頁上的真實簡報 PDF 連結哦！");
-                    }
-                  }}
+                  href="https://drive.google.com/file/d/1_Tl3KDdLcIGFwj7b40MC1dfcUs3pS4Fn/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2.5 rounded-lg text-center font-bold text-xs bg-[#14B8A6] text-white hover:bg-teal-600 shadow-sm transition-colors cursor-pointer"
                 >
                   查看 PartB 簡報 / 下載 PDF
                 </a>
-                <span className="text-[10px] text-center text-amber-600 font-mono bg-amber-50 rounded px-1 py-0.5 border border-amber-100">
-                  即將對接 PDF 連結
+                <span className="text-[10px] text-center text-emerald-600 font-bold bg-emerald-50 rounded px-2 py-0.5 border border-emerald-100">
+                  已成功對接雲端 PDF
                 </span>
               </div>
             </div>
